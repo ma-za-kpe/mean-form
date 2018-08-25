@@ -8,7 +8,7 @@
       {{post.content}}
       <mat-action-row>
           <button mat-stroked-button color="primary" mat-button>EDIT</button>
-          <button mat-stroked-button color="warn" mat-button>DELETE</button>
+          <button mat-stroked-button color="warn" (click)="onDelete(post.id)" mat-button>DELETE</button>
         </mat-action-row>
   </mat-expansion-panel>
 </mat-accordion>
